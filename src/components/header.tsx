@@ -50,7 +50,7 @@ export const Header = () => {
     return (
         <div className="flex justify-center">
             <div className="mt-2 max-w-[95%] w-full flex-col">
-                <header className="sticky top-0 flex h-16 items-center gap-4 border rounded-xl bg-background backdrop-blur-lg px-4 md:px-6">
+                <header className="top-0 flex h-16 items-center gap-4 border rounded-xl bg-background backdrop-blur-lg px-4 md:px-6">
                     <Link
                         href="#"
                         className="hidden md:block flex items-center gap-2 mr-2 text-lg font-semibold md:text-base"

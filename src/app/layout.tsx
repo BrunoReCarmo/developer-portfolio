@@ -28,7 +28,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <div className="px-2 md:px-8 lg:px-12 xl:px-20 mb-4">
+          <div className="px-5 md:px-8 lg:px-12 xl:px-20 mb-4">
             {children}
             <Footer />
           </div>
