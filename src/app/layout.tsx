@@ -1,10 +1,12 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 
+import Loader from "./_components/_loader/loader";
+
+import Footer from "@/components/footer";
 import { Header } from "@/components/header";
 import { ThemeProvider } from "@/components/theme-provider";
-import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +20,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -27,11 +30,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          <div className="px-5 md:px-8 lg:px-12 xl:px-20 mb-4">
-            {children}
-            <Footer />
-          </div>
+          <Loader>
+            <Header />
+            <div className="px-5 md:px-8 lg:px-12 xl:px-20 mb-4">
+              {children}
+              <Footer />
+            </div>
+          </Loader>
         </ThemeProvider>
       </body>
     </html>

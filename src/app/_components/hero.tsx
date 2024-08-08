@@ -3,6 +3,8 @@ import Image from "next/image"
 import { cn } from "@/lib/utils"
 import { styles } from "@/lib/styles"
 
+import Reveal from "@/functions/reveal"
+
 import { BebasNeue, HeadlineFont } from "@/lib/fonts"
 import { Button } from "@/components/ui/button"
 
@@ -34,20 +36,20 @@ export const Hero = () => {
             <div className="grid sm:grid-cols-1 md:grid-cols-2">
                 <div className={`w-full h-full flex items-center ${styles.borderDashedR}`}>
                     <div className="space-y-4">
-                        <div className={cn
+                        <Reveal><div className={cn
                             (`text-xl`,
                                 BebasNeue.className)
                         }>
                             Eu sou um
-                        </div>
-                        <div className={cn
+                        </div></Reveal>
+                        <Reveal><div className={cn
                             (`text-5xl ${styles.primaryTextColor} md:text-5xl xl:text-6xl`,
                                 HeadlineFont.className)
                         }>
                             Desenvolvedor<br />Full-Stack
-                        </div>
-                        <p className="xl:w-3/4">Eu sou o Bruno Reis do Carmo, e tenho {idade} anos. Entusiasta em transformar
-                            ideias em realidade</p>
+                        </div></Reveal>
+                        <Reveal><p className="xl:w-3/4">Eu sou o Bruno Reis do Carmo, e tenho {idade} anos. Entusiasta em transformar
+                            ideias em realidade</p></Reveal>
                         <div className="flex space-x-4">
                             <Button>Entrar em contato</Button>
                             <Button variant="outline">Me conhecer +</Button>

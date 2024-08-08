@@ -4,6 +4,7 @@
 
 @layer base {
   :root {
+    --MainColor: #c2410c;
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -79,4 +80,10 @@
 
 *::-webkit-scrollbar-track {
   border-radius: 4px
+}
+
+*::selection {
+  color: #000;
+  background-color: var(--MainColor);
+  -webkit-text-fill-color: #000;
 }
