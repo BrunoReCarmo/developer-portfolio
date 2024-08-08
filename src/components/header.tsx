@@ -59,8 +59,9 @@ export const Header = () => {
                         <span className="sr-only">Bruno Reis do Carmo</span>
                     </Link>
                     <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-                        {nav.map((nav, index) => (
-                            <Link
+                        {nav.map((nav) => (
+                            <Link 
+                                key={nav.id}
                                 href={`#${nav.id}`}
                                 className="text-muted-foreground transition-colors hover:text-foreground"
                             >
@@ -88,8 +89,9 @@ export const Header = () => {
                                     <Logo />
                                     <span className="sr-only">Bruno Reis do Carmo</span>
                                 </Link>
-                                {nav.map((nav, index) => (
+                                {nav.map((nav) => (
                                     <Link
+                                    key={nav.id}
                                         href={`#${nav.id}`}
                                         className="text-muted-foreground hover:text-foreground"
                                     >

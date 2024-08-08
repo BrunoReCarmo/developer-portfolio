@@ -20,7 +20,7 @@ export const Reveal =({children, width = "fit-content"}: Props) => {
             mainControls.start("visible");
             slideControls.start("visible");
         }
-    }, [isInView] );
+    }, [isInView, mainControls, slideControls] );
 
     return (
         <div ref={ref} style={{ position: "relative", width, overflow: "hidden"}}>
