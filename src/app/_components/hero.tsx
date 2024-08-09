@@ -32,7 +32,7 @@ export const Hero = () => {
     const idade = calcularIdade(dataNascimento);
 
     return (
-        <div className="w-full h-[80vh] max-h-screen flex justify-center sm:items-start md:items-center">
+        <div className={`w-full h-[75vh] max-h-screen flex justify-center sm:items-start md:items-center ${styles.borderDashedB}`}>
             <div className="grid sm:grid-cols-1 md:grid-cols-2">
                 <div className={`w-full h-full flex items-center ${styles.borderDashedR}`}>
                     <div className="space-y-4">
