@@ -4,7 +4,7 @@ import { LogoFont } from "@/lib/fonts";
 export const Logo = () => {
     return(
         <div className={cn
-            ("text-4xl md:mr-5",
+            ("text-4xl",
                 LogoFont.className)
         }>
             B

@@ -32,10 +32,10 @@ export const Hero = () => {
     const idade = calcularIdade(dataNascimento);
 
     return (
-        <div className={`w-full h-[75vh] max-h-screen flex justify-center sm:items-start md:items-center ${styles.borderDashedB}`}>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2">
-                <div className={`w-full h-full flex items-center ${styles.borderDashedR}`}>
-                    <div className="space-y-4">
+        <div className={`w-full pt-20 min-h-fit lg:h-[75vh] flex justify-center sm:items-start md:items-center`}>
+            <div className="grid w-full sm:grid-cols-1 md:grid-cols-2">
+                <div className={`w-full h-full flex items-center ${styles.borderDashedB} ${styles.borderDashedR}`}>
+                    <div className={`space-y-4`}>
                         <Reveal><div className={cn
                             (`text-xl`,
                                 BebasNeue.className)
@@ -46,7 +46,7 @@ export const Hero = () => {
                             (`text-5xl ${styles.primaryTextColor} md:text-5xl xl:text-6xl`,
                                 HeadlineFont.className)
                         }>
-                            Desenvolvedor<br />Full-Stack
+                            Dev.<br />Full-Stack
                         </div></Reveal>
                         <Reveal><p className="xl:w-3/4">Eu sou o Bruno Reis do Carmo, e tenho {idade} anos. Entusiasta em transformar
                             ideias em realidade</p></Reveal>

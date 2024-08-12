@@ -30,7 +30,7 @@ export const WorkField = () => {
                     <div className="min-w-full h-full">
                         <div className="space-y-2">
                             <Reveal><div className={cn
-                                (`text-4xl ${styles.primaryTextColor} md:text-4xl xl:text-4xl`,
+                                (`text-5xl ${styles.primaryTextColor}`,
                                     HeadlineFont.className)
                             }>
                                 Escopos

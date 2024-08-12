@@ -87,3 +87,10 @@
   background-color: var(--MainColor);
   -webkit-text-fill-color: #000;
 }
+
+.sidebar-link.active {
+  color: #c2410c;
+  font-weight: bold;
+  border-top: 2px solid #c2410c;
+}
+
