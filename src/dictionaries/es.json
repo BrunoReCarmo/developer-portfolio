@@ -5,7 +5,7 @@
         "system": "sistema"
     },
     "sidebarProgress": {
-        "firstRow": "Acerca de",
+        "firstRow": "Sobre",
         "secondRow": "Alcance"
     },
     "introduction": {
@@ -17,7 +17,7 @@
         "buttonKnowMeMore": "Conóceme más +"
     },
     "about": {
-        "title": "Acerca de",
+        "title": "Sobre",
         "firstLetter": "S",
         "firstParagraph": "oy Bruno, un joven de São Paulo, Brasil. Desde muy joven, la búsqueda de un propósito ha impulsado mi crecimiento personal y profesional.",
         "secondParagraph": "En 2020, durante la pandemia, exploré diferentes caminos en busca de mi vocación. Inicialmente, consideré la ingeniería civil, pero pronto me di cuenta de que no era de mi interés. Fue entonces cuando descubrí el mercado de la tecnología.",

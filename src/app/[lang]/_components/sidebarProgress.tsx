@@ -4,7 +4,12 @@ import { Logo } from '@/components/logo';
 import { nav } from '@/constants';
 import React, { useEffect } from 'react';
 
-export const SidebarProgress: React.FC = () => {
+interface sidebarProgressProps {
+    firstItem: string,
+    secondItem: string
+}
+
+export const SidebarProgress = ({firstItem, secondItem} : sidebarProgressProps) => {
     useEffect(() => {
         const sections = document.querySelectorAll<HTMLElement>("section");
         const navLinks = document.querySelectorAll<HTMLAnchorElement>(".sidebar-link");
@@ -36,15 +41,20 @@ export const SidebarProgress: React.FC = () => {
             <div className="w-full flex align-center justify-center">
                 <Logo />
             </div>
-            {nav.map((nav, index) => (
                 <div className="flex justify-center items-center">
                     <div className="sidebar-link rotate-90">
-                        <a key={nav.id} href={`${nav.id}`} className="sidebar-link pt-2 px-2">
-                            {nav.title}
+                        <a href={`#about`} className="sidebar-link pt-2 px-2">
+                            {firstItem}
                         </a>
                     </div>
                 </div>
-            ))}
+                <div className="flex justify-center items-center">
+                    <div className="sidebar-link rotate-90">
+                        <a href={`#scope`} className="sidebar-link pt-2 px-2">
+                            {secondItem}
+                        </a>
+                    </div>
+                </div>
         </div>
     );
 };

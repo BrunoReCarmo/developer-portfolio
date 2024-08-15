@@ -12,7 +12,10 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
   return (
     <div>
       <ScrollProgressBar />
-      <SidebarProgress />
+      <SidebarProgress
+      firstItem={dictionary["sidebarProgress"].firstRow} 
+      secondItem={dictionary["sidebarProgress"].secondRow} 
+      />
       <Hero
         PhraseMe={dictionary["introduction"].Iam}
         IntroductionAboutMeFirst={dictionary["introduction"].resumeFirst}
