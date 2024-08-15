@@ -58,7 +58,18 @@ const Skills = ({ title, icon, constant }: SkillsPros) => {
     )
 }
 
-export const AboutMe = () => {
+interface AboutMeProps {
+    title: string,
+    firstLetter: string,
+    fisrtParagraph: string,
+    secondParagraph: string,
+    thirdParagraph: string,
+    fourthParagraph: string,
+    badgeFirstTitle: string,
+    badgeSecondTitle: string,
+}
+
+export const AboutMe = ({ title, firstLetter, fisrtParagraph, secondParagraph, thirdParagraph, fourthParagraph, badgeFirstTitle, badgeSecondTitle }: AboutMeProps) => {
     useEffect(() => {
         AOS.init({
             offset: 200,
@@ -77,7 +88,7 @@ export const AboutMe = () => {
                             (`text-5xl`,
                                 HeadlineFont.className)
                         }>
-                            Sobre<span className={`${styles.primaryTextColor}`}>.</span>
+                            {title}<span className={`${styles.primaryTextColor}`}>.</span>
                         </div>
                     </Reveal>
                 </div>
@@ -90,24 +101,26 @@ export const AboutMe = () => {
                 <div className="w-full md:col-span-2">
                     <div className="text-sm font-light space-y-4">
                         <div>
-                            <span className="p-2 font-bold text-lg rounded-lg bg-gray-300 dark:bg-slate-900 border-transparent">S</span>
-                            ou Bruno, um jovem de São Paulo, Brasil. Desde cedo, a busca por propósito tem impulsionado minha evolução pessoal e profissional.
+                            <span className="p-2 font-bold text-lg rounded-lg bg-gray-300 dark:bg-slate-900 border-transparent">
+                                {firstLetter}
+                            </span>
+                            {fisrtParagraph}
                         </div>
                         <div>
-                            Em 2020, durante a pandemia, explorei diferentes caminhos em busca da minha vocação. Inicialmente, considerei a engenharia civil, mas logo percebi que não era o meu interesse. Foi então que descobri o mercado de tecnologia.
+                            {secondParagraph}
                         </div>
                         <div>
-                            Aos 16 anos, estruturei uma loja de componentes para computadores, o que me levou a estudar profundamente o que estava vendendo. Com 17 anos, durante o Ensino Médio, comecei minha carreira como aprendiz de suporte em TI. Aos 18 anos, no último ano do Ensino Médio, fui efetivado e assumi responsabilidades em Infraestrutura e Desenvolvimento.
+                            {thirdParagraph}
                         </div>
                         <div>
-                            Atualmente, cursando Análise e Desenvolvimento de Sistemas, estou focado em me dedicar totalmente ao desenvolvimento. Acredito que novos desafios continuarão a moldar minha trajetória.
+                            {fourthParagraph}
                         </div>
                     </div>
                 </div>
 
                 <div className="w-full space-y-4">
-                    <Skills title="Linguagens" icon={<SquareCode className="w-5 h-5 text-background" />} constant={Languages} />
-                    <Skills title="Tecnologias" icon={<Cpu className="w-5 h-5 text-background" />} constant={Frameworks} />
+                    <Skills title={badgeFirstTitle} icon={<SquareCode className="w-5 h-5 text-background" />} constant={Languages} />
+                    <Skills title={badgeSecondTitle} icon={<Cpu className="w-5 h-5 text-background" />} constant={Frameworks} />
                 </div>
             </div>
         </div>

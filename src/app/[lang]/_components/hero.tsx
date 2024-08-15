@@ -8,28 +8,37 @@ import Reveal from "@/functions/reveal"
 import { BebasNeue, HeadlineFont } from "@/lib/fonts"
 import { Button } from "@/components/ui/button"
 
-export const Hero = () => {
-    const calcularIdade = (dataNascimento: Date): number => {
-        const hoje = new Date();
-        const anoAtual = hoje.getFullYear();
-        const mesAtual = hoje.getMonth();
-        const diaAtual = hoje.getDate();
+interface HeroProps {
+    PhraseMe: string,
+    ContactMeBtn: string,
+    IntroductionAboutMeFirst: string,
+    IntroductionAboutMeSecond: string,
+    KnowMeMoreBtn: string
+}
 
-        const anoNascimento = dataNascimento.getFullYear();
-        const mesNascimento = dataNascimento.getMonth();
-        const diaNascimento = dataNascimento.getDate();
+export const Hero = ({ PhraseMe, IntroductionAboutMeFirst, IntroductionAboutMeSecond, ContactMeBtn, KnowMeMoreBtn }: HeroProps) => {
+    const calculateAge = (birthDate: Date): number => {
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const currentMonth = today.getMonth();
+        const currentDay = today.getDate();
 
-        let idade = anoAtual - anoNascimento;
+        const birthYear = birthDate.getFullYear();
+        const birthMonth = birthDate.getMonth();
+        const birthDay = birthDate.getDate();
 
-        if (mesAtual < mesNascimento || (mesAtual === mesNascimento && diaAtual < diaNascimento)) {
-            idade--;
+        let age = currentYear - birthYear;
+
+        if (currentMonth < birthMonth || (currentMonth === birthMonth && currentDay < birthDay)) {
+            age--;
         }
 
-        return idade;
+        return age;
     };
 
-    const dataNascimento = new Date(2004, 1, 15);
-    const idade = calcularIdade(dataNascimento);
+    const birthDate = new Date(2004, 1, 15);
+    const age = calculateAge(birthDate);
+
 
     return (
         <div className={`w-full pt-20 min-h-fit lg:h-[75vh] flex justify-center sm:items-start md:items-center`}>
@@ -40,7 +49,7 @@ export const Hero = () => {
                             (`text-xl`,
                                 BebasNeue.className)
                         }>
-                            Eu sou um
+                            {PhraseMe}
                         </div></Reveal>
                         <Reveal><div className={cn
                             (`text-5xl ${styles.primaryTextColor} md:text-5xl xl:text-6xl`,
@@ -48,11 +57,14 @@ export const Hero = () => {
                         }>
                             Dev.<br />Full-Stack
                         </div></Reveal>
-                        <Reveal><p className="xl:w-3/4">Eu sou o Bruno Reis do Carmo, e tenho {idade} anos. Entusiasta em transformar
-                            ideias em realidade</p></Reveal>
+                        <Reveal>
+                            <p className="xl:w-3/4">
+                                {IntroductionAboutMeFirst}{age}{IntroductionAboutMeSecond}
+                            </p>
+                        </Reveal>
                         <div className="flex space-x-4">
-                            <Button>Entrar em contato</Button>
-                            <Button variant="outline">Me conhecer +</Button>
+                            <Button>{ContactMeBtn}</Button>
+                            <Button variant="outline">{KnowMeMoreBtn}</Button>
                         </div>
                     </div>
                 </div>

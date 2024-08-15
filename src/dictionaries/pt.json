@@ -1,0 +1,42 @@
+{
+        "theme": {
+                "dark": "escuro",
+                "light": "claro",
+                "system": "sistema"
+        },
+        "sidebarProgress": {
+                "firstRow": "Sobre",
+                "secondRow": "Escopo"
+        },
+        "introduction": {
+                "Iam": "Eu sou um",
+                "job": "Dev. <br/>Full-Stack",
+                "resumeFirst": "Eu sou o Bruno Reis do Carmo, e tenho ", 
+                "resumeSecond": " anos. Entusiasta em transformar ideias em realidade",
+                "buttonContact": "Entrar em contato",
+                "buttonKnowMeMore": "Me conhecer +"
+        },
+        "about": {
+                "title": "Sobre",
+                "firstLetter": "S",
+                "firstParagraph": "ou Bruno, um jovem de São Paulo, Brasil. Desde cedo, a busca por propósito tem impulsionado minha evolução pessoal e profissional.",
+                "secondParagraph": "Em 2020, durante a pandemia, explorei diferentes caminhos em busca da minha vocação. Inicialmente, considerei a engenharia civil, mas logo percebi que não era o meu interesse. Foi então que descobri o mercado de tecnologia.",
+                "thirdParagraph": "Aos 16 anos, estruturei uma loja de componentes para computadores, o que me levou a estudar profundamente o que estava vendendo. Com 17 anos, durante o Ensino Médio, comecei minha carreira como aprendiz de suporte em TI. Aos 18 anos, no último ano do Ensino Médio, fui efetivado e assumi responsabilidades em Infraestrutura e Desenvolvimento.",
+                "fourthParagraph": "Atualmente, cursando Análise e Desenvolvimento de Sistemas, estou focado em me dedicar totalmente ao desenvolvimento. Acredito que novos desafios continuarão a moldar minha trajetória.",
+                "badges": {
+                        "firstTitle": "Linguagens",
+                        "secondTitle": "Tecnologias"
+                }
+        },
+        "scope": {
+                "title": "Escopos",
+                "subtitle": "As minhas áreas de atuação",
+                "thirdScopeTitle": "Banco de Dados",
+                "scopeContent": {
+                        "firstScope": "Interfaces com práticas aplicadas de UI/UX como em landing pages ou sistemas similares a CRM.",
+                        "secondScope": "Servidores lógicos para serviços separados como APIs RESTful, autenticação ou integrações.",
+                        "thirdScope": "Manipulação de dados centrando em um fluxo de dados seguro e otimizado para consumos de APIs."
+                }
+        },
+        "HelloWorld": "HelloWorld"
+}

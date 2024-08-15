@@ -1,0 +1,42 @@
+{
+    "theme": {
+        "dark": "oscuro",
+        "light": "claro",
+        "system": "sistema"
+    },
+    "sidebarProgress": {
+        "firstRow": "Acerca de",
+        "secondRow": "Alcance"
+    },
+    "introduction": {
+        "Iam": "Soy un",
+        "job": "Desarrollador <br/>Full-Stack",
+        "resumeFirst": "Soy Bruno Reis do Carmo, y tengo ",
+        "resumeSecond":" años. Entusiasta en convertir ideas en realidad",
+        "buttonContact": "Ponerse en contacto",
+        "buttonKnowMeMore": "Conóceme más +"
+    },
+    "about": {
+        "title": "Acerca de",
+        "firstLetter": "S",
+        "firstParagraph": "oy Bruno, un joven de São Paulo, Brasil. Desde muy joven, la búsqueda de un propósito ha impulsado mi crecimiento personal y profesional.",
+        "secondParagraph": "En 2020, durante la pandemia, exploré diferentes caminos en busca de mi vocación. Inicialmente, consideré la ingeniería civil, pero pronto me di cuenta de que no era de mi interés. Fue entonces cuando descubrí el mercado de la tecnología.",
+        "thirdParagraph": "A los 16 años, estructuré una tienda de componentes para computadoras, lo que me llevó a estudiar en profundidad lo que estaba vendiendo. A los 17 años, durante la escuela secundaria, comencé mi carrera como aprendiz de soporte técnico en TI. A los 18 años, en mi último año de secundaria, fui promovido y asumí responsabilidades en Infraestructura y Desarrollo.",
+        "fourthParagraph": "Actualmente, estudiando Análisis y Desarrollo de Sistemas, estoy enfocado en dedicarme completamente al desarrollo. Creo que nuevos desafíos seguirán moldeando mi trayectoria.",
+        "badges": {
+            "firstTitle": "Lenguajes",
+            "secondTitle": "Tecnologías"
+        }
+    },
+    "scope": {
+        "title": "Alcances",
+        "subtitle": "Mis áreas de especialización",
+        "thirdScopeTitle": "Base de Datos",
+        "scopeContent": {
+            "firstScope": "Interfaces con prácticas aplicadas de UI/UX como en páginas de aterrizaje o sistemas similares a CRM.",
+            "secondScope": "Servidores lógicos para servicios separados como APIs RESTful, autenticación o integraciones.",
+            "thirdScope": "Manipulación de datos centrada en un flujo de datos seguro y optimizado para el consumo de APIs."
+        }
+    },
+    "HelloWorld": "HolaMundo"
+}
