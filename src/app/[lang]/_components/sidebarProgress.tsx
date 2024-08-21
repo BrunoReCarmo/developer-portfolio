@@ -1,7 +1,6 @@
 "use client";
 
 import { Logo } from '@/components/logo';
-import { nav } from '@/constants';
 import React, { useEffect } from 'react';
 
 interface sidebarProgressProps {
