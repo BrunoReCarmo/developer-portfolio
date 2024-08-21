@@ -1,6 +1,6 @@
 "use client";
 
-import "./Loader.css";
+import "./loader.css";
 import React, { useState, useEffect } from "react";
 
 import { cn } from "@/lib/utils";
