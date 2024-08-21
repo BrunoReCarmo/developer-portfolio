@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { nav, socialMedia } from "@/constants";
+import { socialMedia } from "@/constants";
 
 import { Logo } from "./logo";
 
@@ -14,13 +14,6 @@ const Footer = () => (
                     <Logo />
                     <span className="self-center ml-4 md:ml-0 text-lg font-semibold whitespace-nowrap dark:text-white">Bruno Reis do Carmo</span>
                 </a>
-                <ul className="flex flex-wrap items-center text-sm font-medium text-gray-500  dark:text-gray-400">
-                    {nav.map((nav, index) => (
-                        <li key={nav.id}>
-                            <a href={`#${nav.id}`} className="mr-4 hover:underline md:mr-6 ">{nav.title}</a>
-                        </li>
-                    ))}
-                </ul>
             </div>
         </div>
 
