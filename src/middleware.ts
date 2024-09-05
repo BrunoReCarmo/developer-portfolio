@@ -13,7 +13,6 @@ function getLocale(request: NextRequest): string | undefined {
     //console.log("Negotiator", negotiatorHeaders)
     //@ts-ignore locales is readonly
     const locales: string[] = i18n.locales
-    console.log("Headers: ", negotiatorHeaders)
   
     // Use negotiator and intl-localematcher to get the best locale
     let languages = new Negotiator({ headers: negotiatorHeaders }).languages(
@@ -27,7 +26,6 @@ function getLocale(request: NextRequest): string | undefined {
   
   
 export function middleware(request: NextRequest) {
-    console.log("Mid working")
     const pathname = request.nextUrl.pathname
 
     // Verify if there is any locale in the pathname
