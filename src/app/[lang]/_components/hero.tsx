@@ -70,7 +70,7 @@ export const Hero = ({ PhraseMe, IntroductionAboutMeFirst, IntroductionAboutMeSe
                 </div>
                 <div className={`flex justify-center ${styles.borderDashedL} bg-pattern dark:bg-darkPattern`}>
                     <Image
-                        src={`/me.jpg`}
+                        src={`/socials/me.jpg`}
                         alt="Bruno Reis do Carmo photo"
                         height={340}
                         width={340}
@@ -78,7 +78,7 @@ export const Hero = ({ PhraseMe, IntroductionAboutMeFirst, IntroductionAboutMeSe
                         />
                     {/*Mobile*/}
                     <Image
-                        src={`/me.jpg`}
+                        src={`/socials/me.jpg`}
                         alt="Bruno Reis do Carmo photo"
                         height={200}
                         width={200}
