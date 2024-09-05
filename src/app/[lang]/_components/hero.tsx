@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image"
+
+import { useParams } from "next/navigation"
 
 import { cn } from "@/lib/utils"
 import { styles } from "@/lib/styles"
@@ -17,6 +21,9 @@ interface HeroProps {
 }
 
 export const Hero = ({ PhraseMe, IntroductionAboutMeFirst, IntroductionAboutMeSecond, ContactMeBtn, KnowMeMoreBtn }: HeroProps) => {
+    const params = useParams();
+    var lang = params.lang
+    
     const calculateAge = (birthDate: Date): number => {
         const today = new Date();
         const currentYear = today.getFullYear();
@@ -70,7 +77,7 @@ export const Hero = ({ PhraseMe, IntroductionAboutMeFirst, IntroductionAboutMeSe
                 </div>
                 <div className={`flex justify-center ${styles.borderDashedL} bg-pattern dark:bg-darkPattern`}>
                     <Image
-                        src={`/socials/me.jpg`}
+                        src={`/${lang}/socials/me.png`}
                         alt="Bruno Reis do Carmo photo"
                         height={340}
                         width={340}
@@ -78,7 +85,7 @@ export const Hero = ({ PhraseMe, IntroductionAboutMeFirst, IntroductionAboutMeSe
                         />
                     {/*Mobile*/}
                     <Image
-                        src={`/socials/me.jpg`}
+                        src={`/${lang}/socials/me.png`}
                         alt="Bruno Reis do Carmo photo"
                         height={200}
                         width={200}
