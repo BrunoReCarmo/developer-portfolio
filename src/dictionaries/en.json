@@ -1,43 +1,51 @@
 {
-        "theme": {
-            "dark": "dark",
-            "light": "light",
-            "system": "system"
-        },
-        "sidebarProgress": {
-            "firstRow": "About",
-            "secondRow": "Scope"
-        },
-        "introduction": {
-            "Iam": "I am a",
-            "job": "Dev. <br/>Full-Stack",
-            "resumeFirst": "I am Bruno Reis do Carmo, and I am ",
-            "resumeSecond": " years old. Enthusiast in turning ideas into reality",
-            "buttonContact": "Get in touch",
-            "buttonKnowMeMore": "Know me more +"
-        },
-        "about": {
-            "title": "About",
-            "firstLetter": "I",
-            "firstParagraph": "am Bruno, a young man from São Paulo, Brazil. From an early age, the search for purpose has driven my personal and professional growth.",
-            "secondParagraph": "In 2020, during the pandemic, I explored different paths in search of my vocation. Initially, I considered civil engineering, but soon realized it wasn’t my interest. That's when I discovered the tech industry.",
-            "thirdParagraph": "At 16, I structured a computer components store, which led me to deeply study what I was selling. At 17, during high school, I started my career as an IT support apprentice. At 18, in my last year of high school, I was promoted and took on responsibilities in Infrastructure and Development.",
-            "fourthParagraph": "Currently, studying Systems Analysis and Development, I am focused on fully dedicating myself to development. I believe that new challenges will continue to shape my journey.",
-            "badges": {
-                "firstTitle": "Languages",
-                "secondTitle": "Technologies"
-            }
-        },
-        "scope": {
-            "title": "Scopes",
-            "subtitle": "My areas of expertise",
-            "thirdScopeTitle": "Database",
-            "scopeContent": {
-                "firstScope": "Interfaces with applied UI/UX practices like landing pages or systems similar to CRM.",
-                "secondScope": "Logical servers for separate services such as RESTful APIs, authentication, or integrations.",
-                "thirdScope": "Data manipulation focusing on a secure and optimized data flow for API consumption."
-            }
-        },
-        "HelloWorld": "HelloWorld"
-    }
-    
+    "theme": {
+        "dark": "dark",
+        "light": "light",
+        "system": "system"
+    },
+    "sidebarProgress": {
+        "firstRow": "About",
+        "secondRow": "projects",
+        "thirdRow": "Scope"
+    },
+    "introduction": {
+        "Iam": "I am a",
+        "job": "Dev. <br/>Full-Stack",
+        "resumeFirst": "I am Bruno Reis do Carmo, and I am ",
+        "resumeSecond": " years old. Enthusiast in turning ideas into reality",
+        "buttonContact": "Get in touch",
+        "buttonKnowMeMore": "Know me more +"
+    },
+    "about": {
+        "title": "About",
+        "firstLetter": "I",
+        "firstParagraph": "am Bruno, a young man from São Paulo, Brazil. From an early age, the search for purpose has driven my personal and professional growth.",
+        "secondParagraph": "In 2020, during the pandemic, I explored different paths in search of my vocation. Initially, I considered civil engineering, but soon realized it wasn’t my interest. That's when I discovered the tech industry.",
+        "thirdParagraph": "At 16, I structured a computer components store, which led me to deeply study what I was selling. At 17, during high school, I started my career as an IT support apprentice. At 18, in my last year of high school, I was promoted and took on responsibilities in Infrastructure and Development.",
+        "fourthParagraph": "Currently, studying Systems Analysis and Development, I am focused on fully dedicating myself to development. I believe that new challenges will continue to shape my journey.",
+        "badges": {
+            "firstTitle": "Languages",
+            "secondTitle": "Technologies"
+        }
+    },
+    "projects": {
+        "cta": "Watch now",
+        "title": "Projects",
+        "subtitle": "Explore some of my work",
+        "firstText": "A multifunctional platform with various tools, but primarily focused on being a subscription-based service for accessing articles aimed at the geek and technology community, featuring the latest news.",
+        "secondText": "Landing page designed to attract new clients through a visually striking and aesthetically distinct website. Crafted to capture interest and stand out from the competition, our page offers a unique experience that grabs attention and encourages conversion.",
+        "thirdText": "A link redirection tool designed to filter and highlight the best product deals on platforms such as Mercado Livre, Shopee, and Shein. This system allows customers to find the lowest prices and most advantageous offers available on the market. With an intuitive interface, it simplifies the product search process, ensuring that consumers get the best buying opportunities with minimal effort."
+    },
+    "scope": {
+        "title": "Scopes",
+        "subtitle": "My areas of expertise",
+        "thirdScopeTitle": "Database",
+        "scopeContent": {
+            "firstScope": "Interfaces with applied UI/UX practices like landing pages or systems similar to CRM.",
+            "secondScope": "Logical servers for separate services such as RESTful APIs, authentication, or integrations.",
+            "thirdScope": "Data manipulation focusing on a secure and optimized data flow for API consumption."
+        }
+    },
+    "HelloWorld": "HelloWorld"
+}

@@ -6,12 +6,13 @@
         },
         "sidebarProgress": {
                 "firstRow": "Sobre",
-                "secondRow": "Escopo"
+                "secondRow": "Projetos",
+                "thirdRow": "Escopo"
         },
         "introduction": {
                 "Iam": "Eu sou um",
                 "job": "Dev. <br/>Full-Stack",
-                "resumeFirst": "Eu sou o Bruno Reis do Carmo, e tenho ", 
+                "resumeFirst": "Eu sou o Bruno Reis do Carmo, e tenho ",
                 "resumeSecond": " anos. Entusiasta em transformar ideias em realidade",
                 "buttonContact": "Entrar em contato",
                 "buttonKnowMeMore": "Me conhecer +"
@@ -27,6 +28,14 @@
                         "firstTitle": "Linguagens",
                         "secondTitle": "Tecnologias"
                 }
+        },
+        "projects": {
+                "cta": "Assista agora",
+                "title": "Projetos",
+                "subtitle": "Veja um pouco do meu trabalho",
+                "firstText": "Plataforma multifuncional com diversas ferramentas, mas principalmente focada em ser uma ferramenta de assinatura para acesso a artigos voltados para a comunidade geek e tecnologia, com as notícias mais recentes.",
+                "secondText": "Landing page projetada para atrair novos clientes por meio de um site visualmente impactante e esteticamente distinto. Desenvolvida para despertar interesse e se diferenciar da concorrência, nossa página oferece uma experiência única que captura a atenção e incentiva a conversão.",
+                "thirdText": "Um redirecionador de links projetado para filtrar e destacar as melhores ofertas de produtos em plataformas como Mercado Livre, Shopee e Shein. Com uma interface intuitiva, ele facilita a busca por produtos, garantindo que os consumidores obtenham as melhores oportunidades de compra."
         },
         "scope": {
                 "title": "Escopos",

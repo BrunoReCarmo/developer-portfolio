@@ -5,10 +5,11 @@ import React, { useEffect } from 'react';
 
 interface sidebarProgressProps {
     firstItem: string,
-    secondItem: string
+    secondItem: string,
+    thirdItem: string,
 }
 
-export const SidebarProgress = ({firstItem, secondItem} : sidebarProgressProps) => {
+export const SidebarProgress = ({firstItem, secondItem, thirdItem} : sidebarProgressProps) => {
     useEffect(() => {
         const sections = document.querySelectorAll<HTMLElement>("section");
         const navLinks = document.querySelectorAll<HTMLAnchorElement>(".sidebar-link");
@@ -49,8 +50,15 @@ export const SidebarProgress = ({firstItem, secondItem} : sidebarProgressProps) 
                 </div>
                 <div className="flex justify-center items-center">
                     <div className="sidebar-link rotate-90">
-                        <a href={`#scope`} className="sidebar-link pt-2 px-2">
+                        <a href={`#project`} className="sidebar-link pt-2 px-3">
                             {secondItem}
+                        </a>
+                    </div>
+                </div>
+                <div className="flex justify-center items-center">
+                    <div className="sidebar-link rotate-90">
+                        <a href={`#scope`} className="sidebar-link pt-2 px-2">
+                            {thirdItem}
                         </a>
                     </div>
                 </div>

@@ -5,6 +5,7 @@ import { WorkField } from "./_components/WorkField";
 import { AboutMe } from "./_components/aboutMe";
 import ScrollProgressBar from "./_components/ScrollProgressBar";
 import { SidebarProgress } from "./_components/sidebarProgress";
+import { Projects } from "./_components/projects";
 
 export default async function Home({ params }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(params.lang);
@@ -13,8 +14,9 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
     <div>
       <ScrollProgressBar />
       <SidebarProgress
-      firstItem={dictionary["sidebarProgress"].firstRow} 
-      secondItem={dictionary["sidebarProgress"].secondRow} 
+        firstItem={dictionary["sidebarProgress"].firstRow}
+        secondItem={dictionary["sidebarProgress"].secondRow}
+        thirdItem={dictionary["sidebarProgress"].thirdRow}
       />
       <Hero
         PhraseMe={dictionary["introduction"].Iam}
@@ -33,6 +35,16 @@ export default async function Home({ params }: { params: { lang: Locale } }) {
           fourthParagraph={dictionary["about"].fourthParagraph}
           badgeFirstTitle={dictionary["about"].badges.firstTitle}
           badgeSecondTitle={dictionary["about"].badges.secondTitle}
+        />
+      </section>
+      <section id="project">
+        <Projects
+          CTA={dictionary["projects"].cta}
+          title={dictionary["projects"].title}
+          subtitle={dictionary["projects"].subtitle}
+          firstText={dictionary["projects"].firstText}
+          secondText={dictionary["projects"].secondText}
+          thirdText={dictionary["projects"].thirdText}
         />
       </section>
       <section id="scope">

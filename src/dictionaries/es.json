@@ -6,13 +6,14 @@
     },
     "sidebarProgress": {
         "firstRow": "Sobre",
-        "secondRow": "Alcance"
+        "secondRow": "Proyectos",
+        "thirdRow": "Alcance"
     },
     "introduction": {
         "Iam": "Soy un",
         "job": "Desarrollador <br/>Full-Stack",
         "resumeFirst": "Soy Bruno Reis do Carmo, y tengo ",
-        "resumeSecond":" años. Entusiasta en convertir ideas en realidad",
+        "resumeSecond": " años. Entusiasta en convertir ideas en realidad",
         "buttonContact": "Ponerse en contacto",
         "buttonKnowMeMore": "Conóceme más +"
     },
@@ -27,6 +28,14 @@
             "firstTitle": "Lenguajes",
             "secondTitle": "Tecnologías"
         }
+    },
+    "projects": {
+        "cta": "Mirar ahora",
+        "title": "Proyectos",
+        "subtitle": "Explora algunos de mis trabajos",
+        "firstText": "Una plataforma multifuncional con diversas herramientas, pero principalmente enfocada en ser un servicio de suscripción para acceder a artículos dirigidos a la comunidad geek y de tecnología, con las noticias más recientes.",
+        "secondText": "Página de destino diseñada para atraer nuevos clientes a través de un sitio web visualmente impactante y estéticamente distintivo. Creada para captar el interés y diferenciarse de la competencia, nuestra página ofrece una experiencia única que captura la atención e incentiva la conversión.",
+        "thirdText": "Un redireccionador de enlaces diseñado para filtrar y destacar las mejores ofertas de productos en plataformas como Mercado Libre, Shopee y Shein. Este sistema permite a los clientes encontrar los precios más bajos y las ofertas más ventajosas disponibles en el mercado. Con una interfaz intuitiva, simplifica el proceso de búsqueda de productos, asegurando que los consumidores obtengan las mejores oportunidades de compra con el mínimo esfuerzo."
     },
     "scope": {
         "title": "Alcances",
