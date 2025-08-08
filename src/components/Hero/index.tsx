@@ -12,22 +12,16 @@ import Reveal from "@/functions/reveal";
 import { BebasNeue, HeadlineFont } from "@/lib/fonts";
 import { Button } from "@/components/ui/button";
 import { useCalculateAge } from "@/hooks/useCalculateAge";
+import { HeroProps } from "./props";
+import { memo } from "react";
 
-interface HeroProps {
-  PhraseMe: string;
-  ContactMeBtn: string;
-  IntroductionAboutMeFirst: string;
-  IntroductionAboutMeSecond: string;
-  KnowMeMoreBtn: string;
-}
-
-export const Hero = ({
+export const Hero = memo(function Hero({
   PhraseMe,
   IntroductionAboutMeFirst,
   IntroductionAboutMeSecond,
   ContactMeBtn,
   KnowMeMoreBtn,
-}: HeroProps) => {
+}: HeroProps) {
   const { calculateAge } = useCalculateAge();
 
   const params = useParams();
@@ -96,4 +90,4 @@ export const Hero = ({
       </div>
     </div>
   );
-};
+});

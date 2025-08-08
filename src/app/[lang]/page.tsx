@@ -1,11 +1,11 @@
 import { getDictionary } from "@/lib/get-dictionary";
 import { Locale } from "@base/i18n-config";
 import { Hero } from "./_components/hero";
-import { WorkField } from "./_components/WorkField";
-import { AboutMe } from "./_components/aboutMe";
 import ScrollProgressBar from "./_components/ScrollProgressBar";
 import { SidebarProgress } from "./_components/sidebarProgress";
-import { Projects } from "./_components/projects";
+import { AboutMe } from "@/components/AboutMe";
+import { Projects } from "@/components/Projects";
+import { WorkField } from "@/components/WorkField";
 
 export default async function Home({ params }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(params.lang);
